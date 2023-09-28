@@ -1,0 +1,157 @@
+@font-face {
+  font-family: "Futura";
+  src: url("../font/FuturaBookC.ttf") format("truetype");
+  font-weight: 800;
+  font-size: normal;
+}
+@font-face {
+  font-family: "Futura Medium";
+  src: url("../font/FuturaMediumC.ttf") format("Truetype");
+  font-weight: 500;
+  font-size: normal;
+}
+.container {
+  width: 1160px;
+  margin: 0 auto;
+}
+
+.title {
+  font-family: Futura;
+  font-size: 50px;
+  color: white;
+  text-transform: uppercase;
+}
+.title_p {
+  color: #504178;
+}
+
+.text {
+  font-family: Futura;
+  font-size: 20px;
+  color: white;
+  text-transform: uppercase;
+}
+.text_p {
+  color: #504178;
+}
+
+.btn {
+  color: white;
+  font-family: Futura;
+  font-size: 16px;
+  background-color: #a387c4;
+  padding: 20px 65px;
+  border-radius: 30px;
+  border: 2px solid #a387c4;
+}
+.btn_p {
+  background-color: #4C3D74;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.intro {
+  background-color: #4C3D74;
+  padding: 105px 0 182px 0;
+}
+.intro__wrap {
+  display: flex;
+}
+.intro__block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.intro__text {
+  margin-bottom: 20px;
+  margin-top: 40px;
+}
+.intro__title {
+  margin-bottom: 30px;
+  max-width: 630px;
+}
+.intro__text2 {
+  margin-bottom: 45px;
+  max-width: 340px;
+}
+.intro__btns {
+  display: flex;
+}
+.intro__btns a:not(:last-child) {
+  margin-right: 25px;
+}
+
+.header {
+  margin-bottom: 10px;
+}
+.header__wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__menu {
+  display: flex;
+}
+.header__menu__li:not(:last-child) {
+  margin-right: 27px;
+}
+.header__nav img {
+  display: none;
+}
+.header__item {
+  font-family: Futura;
+  font-size: 14px;
+  color: white;
+  margin-left: 30px;
+}
+
+@media (max-width: 1170px) {
+  .container {
+    width: unset;
+    padding: 0 20px;
+  }
+  .intro_wrap {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+.header {
+  margin-bottom: 80px;
+}
+
+@media (max-width: 768px) {
+  .header__menu {
+    display: none;
+  }
+  .header__nav img {
+    display: block;
+  }
+}
+@media (max-width: 500px) {
+  .title {
+    font-size: 30px;
+  }
+  .text {
+    font-size: 16px;
+  }
+  .intro__btns {
+    flex-direction: column;
+    align-items: center;
+  }
+  .intro__btns a:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+}
